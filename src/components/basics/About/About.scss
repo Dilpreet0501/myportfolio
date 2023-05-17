@@ -1,0 +1,49 @@
+.abt{
+    height: 100vh;
+     width: 100%;
+     background-color:#1d1d1d  ;
+  //  position:relative;
+    // z-index: 2;
+}
+@mixin code{
+    color: #ffffff7f;
+opacity: 0.4;
+font-size: 20px;
+font-family: 'Allura', cursive;
+ position: absolute;
+animation: fadeIn 1s 1.7s backwards;
+  }
+  .hd1,.hd2,.hd3,.hd4{
+    @include code;
+  }
+  .anime{
+    font-size: 85px;
+   color: rgb(0, 255, 187);
+   font-family: 'Signika', sans-serif;
+   letter-spacing: -1px;
+  margin-top: -0.5rem;
+ position: relative;
+
+
+  }
+ 
+  .port1{
+    margin-left: 15rem;
+  padding-top: 7%;
+position: relative;
+  }
+  .hd2{
+    margin-top: -5rem;
+  }
+  .textzone{ 
+    animation: fadeIn 1s 1.7s backwards;
+     padding-top: 10px;
+    height: 50px;
+    width: 60%;
+    font-family: sans-serif;
+    color: white;
+    font-size: 25px;
+  }
+  .hd4{
+    margin-top: 13rem;
+  }

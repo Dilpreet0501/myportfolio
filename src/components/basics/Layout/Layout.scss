@@ -1,0 +1,38 @@
+.opt{
+    width: 100% ;
+    height: 100%;
+    
+   position: absolute;
+    background-color: #1d1d1d;
+  
+}
+
+@mixin common{
+    color: #ffffff7f;
+    position: absolute;
+    opacity: 0.4;
+    font-size: 20px;
+    font-family: 'Allura', cursive;
+    
+}
+.opentaghtml{
+    @include common;
+      top : 35px;
+      left: 150px;
+
+}
+.opentagbody{
+    @include common;
+   top: 60px;
+   left: 200px;
+}
+.closetaghtml{
+    @include common;
+    bottom:35px;
+    left: 150px;
+}
+.closetagbody{
+    @include common;
+    left: 200px;
+   bottom: 60px;
+}

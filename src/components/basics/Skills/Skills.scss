@@ -1,0 +1,89 @@
+.skill{
+    
+    height: 100vh;
+    width: 100% ;
+   
+    background-color: #1d1d1d ;
+}
+.skillhead{
+    margin-left: 15rem;
+    padding-top: 5rem;
+}
+.textzone1{
+   
+    padding-top: 10px;
+    height: 50px;
+    width: 60%;
+    font-family: sans-serif;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    animation: fadeIn 1s 1.7s backwards;
+}
+.hd5{
+    color: #ffffff7f;
+    opacity: 0.4;
+    font-size: 20px;
+    font-family: 'Allura', cursive;
+    position: absolute;
+    animation: fadeIn 1s 1.7s backwards;
+    padding-top: 100px;
+   margin-left: -45rem;
+}
+
+
+.logo1{
+    color: rgb(0, 208, 255);
+    font-size: 80px;
+    
+}
+.logo2{
+    color: white;
+    font-size: 80px; 
+    padding-left: 25px;
+}
+.logo3{
+    color: rgb(0, 208, 255);
+    font-size: 80px;
+    padding-left: 25px;
+}
+    .logo4{
+        color: orangered;
+        font-size: 80px;
+    padding-left: 25px;
+
+    }
+    .logo5{
+        color: yellow;
+        font-size: 80px;
+    padding-left: 25px;
+
+    }
+    .logo6{
+        color: blue;
+        font-size: 80px;
+    padding-left: 25px;
+
+    }
+    .logo7{
+        color: rgb(255, 163, 179);
+        font-size: 80px;
+    padding-left: 25px;
+
+    }
+    .logo8{
+        color: rgba(104, 25, 200, 0.553);
+        font-size: 80px;
+    padding-left: 25px;
+
+    }
+    .logos{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 7%;
+      margin-left: -30px;
+      position: absolute;
+      animation: fadeIn 1s 1.7s backwards;
+    }
