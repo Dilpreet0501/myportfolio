@@ -4,7 +4,7 @@ import Animateletter from '../Animateletter/Animateletter'
 import "./Skills.scss"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import FireCursorAnimation from "../Cursor/Cursor.js";
+// import FireCursorAnimation from "../Cursor/Cursor.js";
 const Skills = () => {
   const skillArray=  ['M','y',' ','S','k','i','l','l','s']
 const [letterClass, setLetterClass] = useState('text-animate')
@@ -21,7 +21,7 @@ useEffect(() => {
 
   return (
     <>
-  <FireCursorAnimation/>
+{/* <FireCursorAnimation/> */}
     <div className='skill'  >
     <div className='skillhead' >
     <span className='hd1'>&lt;h2&gt;</span>

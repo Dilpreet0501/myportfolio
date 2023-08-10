@@ -6,7 +6,8 @@ import Work from '../Work/Work';
 import Contact from '../Contact/Contact';
 import Animateletter from '../Animateletter/Animateletter';
 import { Link } from 'react-router-dom';
-import FireCursorAnimation from "../Cursor/Cursor.js";
+// import FireCursorAnimation from "../Cursor/Cursor.js";
+import Logo from '../Logo/Logo';
 const Portfolio = () => {
 
 // const job="web developer"
@@ -15,7 +16,7 @@ const Portfolio = () => {
 // const intro="I'm"
 
 const jobArray=  ['w','e','b','  ','d','e','v','e','l','o','p','e','r']
-const nameArray=  ['D','i','l','p','r','e','e','t']
+const nameArray=  [ 'D','i','l','p','r','e','e','t']
 const greetArray=  ['H','i',',']
 const introArray= ["I'",'m','  ']
 
@@ -33,7 +34,7 @@ useEffect(() => {
 
   return (
     <>
-  <FireCursorAnimation/>
+{/* <FireCursorAnimation/> */}
     <div className='main'>
     <div className='port' >
     <span className='head1'>&lt;h1&gt;</span>
@@ -41,6 +42,7 @@ useEffect(() => {
     <div className='textzone'>
     <span className='heading'><Animateletter strArray={greetArray} letterClass={letterClass} idx={10} /><br/>
        <Animateletter strArray={introArray} letterClass={letterClass} idx={13}/>
+       {/* <img src='./images/Dlogo.png' alt='logo'/> */}
        <Animateletter strArray={nameArray} letterClass={letterClass} idx={16}/>
        <br />
       <Animateletter strArray={jobArray}letterClass={letterClass} idx={23}/>
@@ -59,6 +61,7 @@ useEffect(() => {
 
 
     </div>
+    <Logo/>
    <About/>
    <Skills/>
    <Work/>

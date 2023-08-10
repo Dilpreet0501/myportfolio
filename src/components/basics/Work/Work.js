@@ -5,7 +5,7 @@ import ProjectSection from './Projectsection'
 import ProjectsData from './Projectdata';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import FireCursorAnimation from "../Cursor/Cursor.js";
+// import FireCursorAnimation from "../Cursor/Cursor.js";
 import "./Work.scss"
 
 
@@ -26,7 +26,7 @@ const Work = () => {
   
     return (
       <>
-<FireCursorAnimation/>
+{/* <FireCursorAnimation/> */}
       <div className='work'  >
       <div className='prj' >
       <span className='hd1'>&lt;h2&gt;</span>

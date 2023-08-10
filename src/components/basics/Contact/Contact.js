@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Animateletter from '../Animateletter/Animateletter'
-import FireCursorAnimation from "../Cursor/Cursor.js";
+// import FireCursorAnimation from "../Cursor/Cursor.js";
 
 import "./Contact.scss"
 
@@ -43,7 +43,7 @@ const sendEmail = (e) => {
   
   return (
     <>
-<FireCursorAnimation/>
+{/* <FireCursorAnimation/> */}
 <div className='ctc'  >
 
     <div className='contact'>

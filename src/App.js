@@ -13,6 +13,7 @@ import Layout from "./components/basics/Layout/Layout.js";
 function App() {
   return (
   <>
+
 <Router>
 <Layout/>
 
@@ -27,6 +28,8 @@ function App() {
       
 </Routes>
 </Router>
+
+
 </>
 
   
