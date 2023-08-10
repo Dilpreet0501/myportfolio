@@ -9,7 +9,7 @@ const Navbar=()=> {
         
             <div className='nav'>
            
-  <div className='pro'> <NavLink className="nav_link1"  to="/" ><img src='./images/Dlogo.png' alt="dlogo" className='img'/> <img src='./images/Dilpreet.png' alt="dilpreet"  className='img1'/> <img src='./images/webdev.png' alt='web' className='img2' /> </NavLink></div>
+  <div className='pro'> <NavLink className="nav_link1"  to="/" ><img src='./images/sonudoc.png' alt="dlogo" className='img'/> <img src='./images/dilpreet.png' alt="dilpreet"  className='img1'/> <img src='./images/webdev.png' alt='web' className='img2' /> </NavLink></div>
  <hr></hr>
  <div className='divs'></div>
  <hr></hr>
