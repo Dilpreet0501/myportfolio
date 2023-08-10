@@ -6,14 +6,11 @@ import Work from '../Work/Work';
 import Contact from '../Contact/Contact';
 import Animateletter from '../Animateletter/Animateletter';
 import { Link } from 'react-router-dom';
-// import FireCursorAnimation from "../Cursor/Cursor.js";
+
 import Logo from '../Logo/Logo';
 const Portfolio = () => {
 
-// const job="web developer"
-// const name="Dilpreet"
-// const greet="Hi,"
-// const intro="I'm"
+
 
 const jobArray=  ['w','e','b','  ','d','e','v','e','l','o','p','e','r']
 const nameArray=  [ 'D','i','l','p','r','e','e','t']
@@ -34,7 +31,7 @@ useEffect(() => {
 
   return (
     <>
-{/* <FireCursorAnimation/> */}
+
     <div className='main'>
     <div className='port' >
     <span className='head1'>&lt;h1&gt;</span>

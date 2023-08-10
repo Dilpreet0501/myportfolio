@@ -45,18 +45,7 @@ const Logo = () => {
         alt="JavaScript,  Developer"
       />
 
-{/* <svg width="200" height="200">
-      <path d="M50,50 A50,50 0 0,1 150,100 L150,150 A50,50 0 0,0 50,100 Z"
-            stroke="black"
-            stroke-width="2"
-            fill="none">
-        <animate attributeName="stroke-dashoffset"
-                 from="500"
-                 to="0"
-                 dur="2s"
-                 repeatCount="indefinite" />
-                 </path>
-                 </svg> */}
+
       </div>
     </>
   )
