@@ -1,9 +1,16 @@
 import React from 'react'
 import './Navbar.scss'
 import { NavLink } from 'react-router-dom'
-
+import { useState} from 'react'
 const Navbar=()=> {
-
+ 
+ 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const handleDropdownToggle = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+    // console.log(isDropdownOpen)
+  };
+      
     return (
         <>
         
@@ -30,7 +37,39 @@ const Navbar=()=> {
  </div>
 
 </div>
-
+<div className='menu'>
+    
+<nav className="navbar navbar-expand-md bg-dark navbar-dark">
+      <div className="container">
+        <NavLink className="navbar-brand" to="/">
+          <img src="./images/sonudoc.png" alt="dlogo" className="imges" />
+        </NavLink>
+        <button className="navbar-toggler" type="button" onClick={handleDropdownToggle}>
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${isDropdownOpen ? 'show' : ''}`}>
+          <ul className="navbar-nav ml-auto">
+            
+            <li className="nav-item">
+            <NavLink className="nav_link" to="/about" >About</NavLink>
+            </li>
+            <hr></hr>
+            <li className='nav-item'>
+            <NavLink className="nav_link"  to="/skills"> Skills </NavLink>
+            </li>
+            <hr></hr>
+            <li className='nav-item'>
+            <NavLink className="nav_link" to="/work" >Projects </NavLink>
+            </li>
+            <hr></hr>
+            <li className='nav-item'>
+            <NavLink  className="nav_link" to="/contact" >Contact</NavLink>
+            </li>
+            </ul>
+  </div> 
+  </div> 
+</nav>
+</div>
 
 
 

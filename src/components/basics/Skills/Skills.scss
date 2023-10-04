@@ -1,23 +1,25 @@
 .skill{
     
     height: 100vh;
-    width: 100% ;
-   
+    width: 83% !important;
+   overflow: hidden;
+ position: relative;
+   margin-left: 17%;
+   padding-top: 7rem;
     background-color: #1d1d1d ;
-}
-.skillhead{
-    margin-left: 15rem;
-    padding-top: 5rem;
-}
+  overflow-x: hidden !important;
+
+
 .textzone1{
-   
+    // overflow-x: hidden;
     padding-top: 10px;
-    height: 50px;
-    width: 60%;
+    height: 90vh;
+   padding-right: 20px !important;
+    width: 100%;
     font-family: sans-serif;
     color: white;
     font-size: 25px;
-    position: absolute;
+    // position: absolute;
     animation: fadeIn 1s 1.7s backwards;
 }
 .hd5{
@@ -27,15 +29,20 @@
     font-family: 'Allura', cursive;
     position: absolute;
     animation: fadeIn 1s 1.7s backwards;
-    padding-top: 100px;
-   margin-left: -45rem;
+    padding-top: 10rem;
+//    margin-left: 5% !important;
 }
-
+.logos{
+    height: 40vh;
+    width: 100%;
+    padding-right: 20px !important;
+    overflow: hidden;
+}
 
 .logo1{
     color: rgb(0, 208, 255);
     font-size: 80px;
-    
+     padding-left: 2rem;
 }
 .logo2{
     color: white;
@@ -86,4 +93,48 @@
       margin-left: -30px;
       position: absolute;
       animation: fadeIn 1s 1.7s backwards;
+    }}
+    @media(max-width: 1120px)
+    {
+        
+        .logo1,.logo2,.logo3,.logo4,.logo5,.logo6,.logo7,.logo8{
+            font-size: 60px ;
+        }
+        
+    }
+    @media(max-width:965px)
+    {
+        .textzone1{
+            font-size: 20px !important ;
+        }
+    }
+    @media(max-width: 900px)
+    {
+        .skill{
+            margin-left: 20%;
+            overflow-x: hidden !important;
+          width: 80% ;
+        }
+       
+        .logo1,.logo2,.logo3,.logo4,.logo5,.logo6,.logo7,.logo8{
+            font-size: 40px !important ;
+            overflow-x: hidden;
+        }
+      
+    }
+    @media(max-width:750px)
+    {
+        .skill{
+            margin-left: 10%;
+            width: 90% !important;
+            padding-top: 10rem !important;
+        }
+    }
+    @media(max-width:510px)
+    { .anime{
+        font-size: 60px;
+    }
+        .textzone1{
+            font-size: 15px !important;
+        }
     }

@@ -36,7 +36,7 @@ useEffect(() => {
     <div className='port' >
     <span className='head1'>&lt;h1&gt;</span>
     <br/>
-    <div className='textzone'>
+    <div className='texti'>
     <span className='heading'><Animateletter strArray={greetArray} letterClass={letterClass} idx={10} /><br/>
        <Animateletter strArray={introArray} letterClass={letterClass} idx={13}/>
        {/* <img src='./images/Dlogo.png' alt='logo'/> */}
@@ -48,16 +48,17 @@ useEffect(() => {
     <span className='head2'>&lt;/h1&gt;</span>
     <br/>
     <span className='head3'>&lt;p&gt;</span>
-    <h2> Frontend Developer / Web Developer</h2>
+    <h2 className='subhead'> Frontend Developer / Web Developer</h2>
     <br/>
     <span className='head4'>&lt;/p&gt;</span>
 
-   </div>
-   <div >< Link to="/contact" className='click'><button className='btn'>Contact me!</button></Link> </div>
+  
+  
 
 
-
-    </div>
+    
+    <div  className='contact-btn'>< Link to="/contact" className='click'><button className='btn'>Contact me!</button></Link> </div></div>
+</div>
     <Logo/>
    <About/>
    <Skills/>

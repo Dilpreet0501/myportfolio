@@ -1,31 +1,42 @@
 .work{height: 100vh;
     width: 100%;
     background-color: #1d1d1d ;
-    // position: relative;
-}
+     position: relative;
+    overflow: hidden;
+   overflow-x: hidden;
+
+
 .prj{
-  padding-top: 6rem;
-  margin-left: 15rem;
+  padding-top: 7rem;
+  margin-left: 17%;
 }
   .sec1,.sec2{
     color: #ffffff7f;
 opacity: 0.4;
 font-size: 20px;
 font-family: 'Allura', cursive;
- position: absolute;
+ position: relative;
 animation: fadeIn 1s 1.7s backwards;
   }
   .sec1{
     margin-top: -30px;
   }
   .sec2{
-    margin-left: 50%;
+    // margin-left: 17%;
     margin-top: -30px;
   }
+  .workdisp{
+   
+    height: 100%;
+    width:100%;
+  }
   .project-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display:grid;
+   
+    grid-template-columns: auto auto auto; 
+    
+    gap: 1% ;
+   
   }
   
   .project-card {
@@ -61,5 +72,71 @@ animation: fadeIn 1s 1.7s backwards;
   .project-card:hover .project-link {
     opacity: 1;
   }
-  
-  
+  @media(max-width:1120px)
+  {
+    
+    .project-card{
+      height: 200px;
+      width: 250px;;;
+
+    }
+ 
+  }
+
+  @media (max-width: 965px){
+    .project-card{
+      height: 150px;
+      width: 200px;;;
+      overflow-x: hidden;
+    }
+  }
+  @media(max-width: 900px)
+  {
+    .prj{
+      margin-left: 20%;
+    }
+  }
+  @media(max-width:750px) {
+    .prj{
+      margin-left: 10%;
+      padding-top: 10rem !important;
+    }
+    .project-section{
+      
+      gap: 0.1%;
+    }
+    .project-card{
+      height: 140px;
+      width: 190px;
+    }
+  }
+  @media(max-width: 650px)
+  {.project-section{
+      grid-template-columns: auto auto;
+    gap: 0.1%;
+   
+  }
+
+  }
+  @media(max-width: 455px)
+  {
+    .anime{
+      font-size: 60px ;
+    }
+    .project-section{
+      margin-left: -17% !important;
+      justify-content:center ;
+      grid-template-columns: auto;
+    }
+    .project-card{
+      height: 100px;
+      width: 180px;
+    }
+  }
+  @media(max-width:388px)
+  {
+    .anime{
+      font-size: 50px;
+    }
+  }
+}

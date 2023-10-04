@@ -10,6 +10,25 @@ import "./Work.scss"
 
 
 const Work = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+  
+  };
+  
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+  
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
+  
+  
+  
+  
+  console.log(scrollPosition);
   const workArray=  ['M','y',' ','P','r','o','j','e','c','t','s']
   const [letterClass, setLetterClass] = useState('text-animate')
   useEffect(() => {
@@ -29,17 +48,19 @@ const Work = () => {
 {/* <FireCursorAnimation/> */}
       <div className='work'  >
       <div className='prj' >
-      <span className='hd1'>&lt;h2&gt;</span>
+      {scrollPosition>1500 || (scrollPosition>=0 && scrollPosition<50)?(<span className='hd1'>&lt;h2&gt;</span>):(<div></div>)}
       <br/>
     
-      <h1 className='anime'><Animateletter strArray={workArray} letterClass={letterClass} idx={10} />  </h1><br/>
-      <span className='hd2'>&lt;/h2&gt;</span>
-      <span className='sec1'>&lt;section&gt;</span>
+      <h1 className='anime'>{scrollPosition>1500 || (scrollPosition>=0 && scrollPosition<50)?(<Animateletter strArray={workArray} letterClass="text-animate" idx={10} />):<Animateletter  letterClass={letterClass} idx={10}/>}  </h1><br/>
+      {scrollPosition>1500 || (scrollPosition>=0 && scrollPosition<50)?(<span className='hd2'>&lt;/h2&gt;</span>):(<div></div>)}
+      {scrollPosition>1500 || (scrollPosition>=0 && scrollPosition<50)?(<span className='sec1'>&lt;section&gt;</span>):(<div></div>)}
       <br />
+      <div className='workdisp'>
       <ProjectSection projectsData={ProjectsData} />
+     
       <br/><br/>
-      <span className='sec2'>&lt;/section&gt;</span><br/>
-
+      {scrollPosition>1500 || (scrollPosition>=0 && scrollPosition<50)?( <span className='sec2'>&lt;/section&gt;</span>):(<div></div>)}<br/>
+      </div>
        </div>
   
       </div>

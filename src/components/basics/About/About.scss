@@ -2,7 +2,8 @@
     height: 100vh;
      width: 100%;
      background-color:#1d1d1d  ;
-  //  position:relative;
+    position:relative;
+    overflow: hidden;
     // z-index: 2;
 }
 @mixin code{
@@ -28,22 +29,63 @@ animation: fadeIn 1s 1.7s backwards;
   }
  
   .port1{
-    margin-left: 15rem;
-  padding-top: 7%;
+    margin-left: 17%;
+  padding-top: 7rem;;
 position: relative;
   }
   .hd2{
-    margin-top: -5rem;
+    margin-top: -3rem;
   }
   .textzone{ 
     animation: fadeIn 1s 1.7s backwards;
      padding-top: 10px;
-    height: 50px;
-    width: 60%;
+    height: 18vh;
+   padding-right: 20px;
+    width: 100%;
     font-family: sans-serif;
     color: white;
     font-size: 25px;
   }
   .hd4{
-    margin-top: 13rem;
+    margin-top: 8rem;
   }
+@media(max-width:965px )
+{
+  .anime{
+    font-size: 70px;
+  }
+  .textzone{
+    font-size: 20px;;
+  }
+}
+@media(max-width: 900px)
+{
+  .port1{
+    margin-left: 20%;
+  }
+}
+@media(max-width: 750px){
+  
+ .port1{
+  margin-left: 10%;
+  padding-top: 10rem !important;
+ }
+}
+@media(max-width:510px)
+{
+  .anime{
+    font-size: 60px ;
+  }
+  .textzone{
+    font-size: 15px !important;
+  }
+  .hd2{
+    margin-top: -2rem;
+  }
+}
+@media(max-width:388px)
+{
+  .anime{
+    font-size: 50px;
+  }
+}

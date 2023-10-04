@@ -2,15 +2,33 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 import Animateletter from '../Animateletter/Animateletter'
 
 
 import "./Contact.scss"
 
 const Contact = ()=> {
-  const contactArray=  ['C','o','n','t','a','c','t',' ',' u','s']
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+  
+  };
+  
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+  
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
+  
+  
+  
+  
+  console.log(scrollPosition);
+  const contactArray=  ['C','o','n','t','a','c','t',' ',' M','e']
 const [letterClass, setLetterClass] = useState('text-animate')
 const form = useRef()
 useEffect(() => {
@@ -19,9 +37,7 @@ useEffect(() => {
   }, 4000)}
 func ();
 }, [])
-useEffect(() => {
-  AOS.init();
-}, []);
+
 
 
 const sendEmail = (e) => {
@@ -47,12 +63,12 @@ const sendEmail = (e) => {
 <div className='ctc'  >
 
     <div className='contact'>
-    <span className='hd1'>&lt;h2&gt;</span>
+   {scrollPosition>2100 ||(scrollPosition>=0 && scrollPosition<50)?(<span className='hd1'>&lt;h2&gt;</span>):(<div></div>)}
     <br/>
   
-    <h1 className='anime'><Animateletter strArray={contactArray} letterClass={letterClass} idx={10} />  </h1><br/>
-    <span className='hd2'>&lt;/h2&gt;</span>
-    <span className='ctc1'>&lt;form&gt;</span>
+    <h1 className='anime'>{scrollPosition>2100 ||(scrollPosition>=0 && scrollPosition<50)?(<Animateletter strArray={contactArray} letterClass="text-animate" idx={10} />):<Animateletter  letterClass={letterClass} idx={10} />} </h1><br/>
+    {scrollPosition>2100 ||(scrollPosition>=0 && scrollPosition<50)?(<span className='hd2'>&lt;/h2&gt;</span>):(<div></div>)}
+    {scrollPosition>2100 ||(scrollPosition>=0 && scrollPosition<50)?(<span className='ctc1'>&lt;form&gt;</span>):(<div></div>)}
        <br />
        <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -90,7 +106,8 @@ const sendEmail = (e) => {
             </form>
           </div>
       
-      <span className='ctc2'>&lt;/form&gt;</span><br/>
+          {scrollPosition>2100 ||(scrollPosition>=0 && scrollPosition<50)?(<span className='ctc2'>&lt;/form&gt;</span>):(<div></div>)}
+          <br/>
       </div>
     </div>
    

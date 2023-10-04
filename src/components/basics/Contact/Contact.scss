@@ -1,31 +1,28 @@
 .ctc{height: 100vh;
     width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
     background-color: #1d1d1d;
+   position: relative;
  
- }
  .contact{
-margin-left: 15rem;
-padding-top: 6rem;
+margin-left: 17%;
+padding-top: 7rem;
  }
  .ctc1,.ctc2{
+  padding: 0;
+  margin: 0;
     color: #ffffff7f;
     opacity: 0.4;
     font-size: 20px;
     font-family: 'Allura', cursive;
-     position: absolute;
+     position: relative;
     animation: fadeIn 1s 1.7s backwards;
     // margin-top: -3rem;
  }
- .ctc1{
-    margin-top: -1rem;
- }
- .ctc2{
-    margin-top: -1rem;
- }
+
  .contact-form {
-    width: 600px;
-    margin-top: -5px;
+    width: 600px ;
+margin-top: 15px;
   
     ul {
       padding: 0;
@@ -62,8 +59,8 @@ padding-top: 6rem;
       width: 100%;
       border: 0;
       background: #2b2b2b;
-      height: 40px;
-      font-size: 16px;
+      height: 40px ;
+      font-size: 16px ;
       color: #fff;
       padding: 0 20px;
       box-sizing: border-box;
@@ -76,17 +73,17 @@ padding-top: 6rem;
       width: 100%;
       border: 0;
       background: #2b2b2b;
-      height: 50px;
-      font-size: 16px;
+      height: 180px ;
+      font-size: 16px ;
       color: #fff;
       padding:  20px;
       box-sizing: border-box;
-      min-height: 150px;
+      // min-height: 150px;
     }
   
     .flat-button {
       color: rgb(0, 255, 187);
-      font-size: 11px;
+      font-size: 11px ;
       letter-spacing: 3px;
       text-decoration: none;
       padding: 8px 10px;
@@ -104,5 +101,80 @@ padding-top: 6rem;
         cursor: pointer;
       }
     }
+  }}
+@media(max-width: 965px)
+{
+  .contact-form{
+    width: 500px !important;
+    textarea{
+      height: 150px !important;
+      font-size: 14px !important;
+    }
+    input[type='text'],
+    input[type='email'] {
+      
+      height: 35px !important;
+      font-size: 14px !important;
+     
+    }
   }
+  .flat-button{
+    font-size: 10px !important;
+  }
+  .anime{
+    font-size: 70px;;
+  }
+}
+@media(max-width: 900px)
+{
+  .contact{
+    margin-left: 20% !important;
+  }
+  .contact-form{
+   
+    width: 500px !important;
+    textarea{
+      height: 150px !important;
+      font-size: 14px !important;
+    }
+    input[type='text'],
+    input[type='email'] {
+      
+      height: 35px !important;
+      font-size: 14px !important;
+     
+    }
+  }
+  .flat-button{
+    font-size: 10px !important;
+  }
+}
 
+@media(max-width:750px)
+{
+  .contact{
+    margin-left: 10% !important;
+    padding-top: 10rem !important;
+  }
+}
+@media(max-width:600px)
+{
+  .contact-form{
+    width: 400px !important;
+  }
+}
+@media(max-width: 485px)
+{
+  .anime{
+    font-size: 60px;
+  }
+  .contact-form{
+    width: 90% !important;
+  }
+}
+@media(max-width: 388px)
+{
+  .anime{
+    font-size: 50px;
+  }
+}
