@@ -14,7 +14,7 @@ const ProjectsData = [
     {
       id:3,
       title: 'Internshala Task',
-      image:'internshalatask.jpg',
+      image:'internshalanew.jpg',
       link: 'https://jovial-kelpie-c7e1ef.netlify.app/',
 
     },
