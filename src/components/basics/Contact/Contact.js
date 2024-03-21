@@ -28,7 +28,7 @@ const Contact = ()=> {
   
   
   console.log(scrollPosition);
-  const contactArray=  ['C','o','n','t','a','c','t',' ',' M','e']
+  const contactArray=  ['C','o','n','t','a','c','t',' ',' M','e','!']
 const [letterClass, setLetterClass] = useState('text-animate')
 const form = useRef()
 useEffect(() => {
@@ -73,8 +73,8 @@ const sendEmail = (e) => {
        <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
-                <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                <li className="half" id="name">
+                  <input placeholder="Your Name" type="text" name="name" required />
                 </li>
                 <li className="half">
                   <input
@@ -94,7 +94,7 @@ const sendEmail = (e) => {
                 </li>
                 <li>
                   <textarea
-                    placeholder="Message"
+                    placeholder=" Enter your Message"
                     name="message"
                     required
                   ></textarea>

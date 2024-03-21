@@ -63,10 +63,10 @@ useEffect(() => {
    {(scrollPosition>300 || (scrollPosition>=0 && scrollPosition<50))?(<span className='hd3'>&lt;p&gt;</span>):(<div></div>)}
        <br />
        <div className='textzone'>
-       <span> I’m a Front-End Developer located in India. I love making beautiful UI's the most. Web Development is more a hobby than a passion for me.</span>
-      <br/> <br/>
+       <span> I’m a Third year Electrical student at NIT Raipur with a CGPA of 8.40. I am a frontend developer, I love making beutiful UI's the most. Web development is more of a hobby than a profession for me. </span>
+      <br/> 
       <span>I have worked with vast set of web technologies over the period of an year since I started learning to make websites.</span>
-      <br/> <br/> 
+      <br/> 
       <span>The opportunity to learn something new every day is what acts as a fuel that drives me forward.</span>
       </div>
      {scrollPosition>300 || (scrollPosition>=0 && scrollPosition<50)?( <span className='hd4'>&lt;/p&gt;</span>):(<div></div>)}

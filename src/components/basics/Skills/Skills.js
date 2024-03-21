@@ -52,7 +52,7 @@ useEffect(() => {
     {scrollPosition>900 || (scrollPosition>=0 && scrollPosition<50)?(<span className='hd3'>&lt;p&gt;</span>):(<div></div>)}
        <br />
        <div className='textzone1'>
-      <span> As different projects requires different set of technologies, I keep exploring new tools regularly to keep myself updated to the world. Some of the noteworthy technologies used by me are,</span>
+      <span> As different projects requires different set of technologies, I keep exploring new tools regularly to keep myself updated to the world. I possess a strong background in python, C++, machine learning, SQL, React and front-end development.Some of the technologies used by me are,  </span>
    <br/> 
 
    <div className='logos'>
